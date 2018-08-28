@@ -47,7 +47,7 @@ class UsersController < ApplicationController
 
     def correct_user
       @user = User.find(params[:id])
-      if !(@user == current_user)
+      if !current_user?(@user)
         flash[:danger] = "You can edit your profile"
         redirect_to root_url
       end
