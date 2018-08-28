@@ -13,6 +13,7 @@ gem 'jbuilder',     '2.7.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'will_paginate', '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'faker',        '1.7.3'
 
 group :development, :test do
   gem 'mysql2'
